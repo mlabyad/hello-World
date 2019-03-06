@@ -51,6 +51,10 @@ Finally, keep in mind that entity types in your testing data have to match the o
 of the extraction components. This is particularly important for ``ner_duckling``, because it is not
 fitted to your training data.
 
+When working with entities (destination, origin, ...) here is the output of the evaluation concerning the entities.
+
+
+<img align="center" height="244" src="https://github.com/mlabyad/hello-World/blob/master/Evaluate_model_with_logs_entities_ner_crf.png">
 
 Evaluation Parameters
 ---------------------
@@ -58,14 +62,3 @@ Evaluation Parameters
 There are a number of parameters you can pass to the evaluation script
 
     $ python -m rasa_nlu.evaluate --help
-
-Here is a quick overview:Evaluate_model_with_logs_intities
-
-.. program-output:: python -m rasa_nlu.evaluate --help
-
-Rasa NLU is primarily used to build chatbots and voice apps, where this is called intent classification and entity extraction.
-To use Rasa, *you have to provide some training data*.
-That is, a set of messages which you've already labelled with their intents and entities.
-Rasa then uses machine learning to pick up patterns and generalise to unseen sentences. 
-
-You can think of Rasa NLU as a set of high level APIs for building your own language parser using existing NLP and ML libraries.
